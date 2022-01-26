@@ -28,7 +28,7 @@ alias ...='cd ../..'
 
 
 # Courses
-alias update_cours="cd ~/Documents/Nsi/cours ; git restore . ; git pull"
+alias updt_cours="cd ~/Documents/Nsi/cours ; git restore . ; git pull"
 alias cours="cd ~/Documents/Nsi"
 alias jupyter="cd ~/Documents/Nsi/cours ; jupyter-notebook"
 
