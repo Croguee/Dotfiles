@@ -1,4 +1,4 @@
-format = " $username • $hostname [❯](#1e90ff) $directory ❯ "
+format = " $username • $hostname [❯](#4e86b6) $directory ❯ "
 right_format = "$python$git_status $git_commit$git_branch$battery• $time"
 
 add_newline = false
@@ -8,7 +8,7 @@ disabled = true
 
 
 [username]
-style_user = "bold #1e90ff"
+style_user = "bold #4e86b6"   ##1e90ff
 show_always = true
 format = "[$user]($style)"
 
