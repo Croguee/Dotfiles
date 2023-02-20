@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
-let g:netrw_dirhist_2='/home/gwendal/.config/fish/conf.d'
-let g:netrw_dirhist_1='/home/gwendal/.config/fish/functions'
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/bastien/.config/conky/Graffias/scripts'
+let g:netrw_dirhist_2='/home/bastien/.config/conky/Graffias/res'
+let g:netrw_dirhist_1='/home/bastien/.config/conky'

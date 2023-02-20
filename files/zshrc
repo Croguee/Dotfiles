@@ -5,8 +5,8 @@ export HISTSIZE=10000
 export SAVEHIST=10000
 
 # Enable zsh highlighting and suggestions
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Enable zsh completion
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' menu yes select
@@ -26,11 +26,11 @@ alias la='exa --icons -la'
 alias ..='cd ..'
 alias ...='cd ../..'
 
+# Copy from usb drive
+alias cp_usb_cours='cd /run/media/bastien/SanDisk/INFO; cp -r  * ~/Documents/info-cours; cd ~/Documents/info-cours'
 
-# Courses
-alias updt_cours="cd ~/Documents/Nsi/cours ; git restore . ; git pull"
-alias cours="cd ~/Documents/Nsi"
-alias jupyter="cd ~/Documents/Nsi/cours ; jupyter-notebook"
+alias cp_cours_usb='cd ~/Documents/info-cours; cp -r  * /run/media/bastien/SanDisk/INFO; cd /run/media/bastien/SanDisk/INFO'
+
 
 
 # Python Virtual Env.
@@ -38,3 +38,6 @@ function venv ()
 {
 	python -m venv ~/venv/$1 ; source ~/venv/$1/bin/activate
 }
+
+# opam configuration
+[[ ! -r /home/bastien/.opam/opam-init/init.zsh ]] || source /home/bastien/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null

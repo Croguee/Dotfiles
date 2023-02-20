@@ -1,23 +1,10 @@
-format = " $username • $hostname [❯](#4e86b6) $directory ❯ "
-right_format = "$python$git_status $git_commit$git_branch$battery• $time"
+format = "$python $time ▶ $directory ▶ "
 
 add_newline = false
 
 [line_break]
 disabled = true
 
-
-[username]
-style_user = "bold #4e86b6"   ##1e90ff
-show_always = true
-format = "[$user]($style)"
-
-[hostname]
-ssh_only = false
-style = "bold #f1f2f6"
-format = "[$hostname]($style)"
-trim_at = "-"
-disabled = false
 
 [directory]
 truncation_length = 5
@@ -26,64 +13,18 @@ style = "bold #FDBC4B"
 read_only = "🔒"
 read_only_style= "bold white"
 
-[character]
-error_symbol = "[✗](bold #ff0000)"
-success_symbol = "[❯](bold #ea00d9)"
 
 [python]
-format = "[$symbol](bold #ffda65)[$virtualenv](#4e86b6) • "
+format = "[$symbol](bold #ffda65)$virtualenv ▶"
 symbol = " "
 pyenv_version_name = false
 
 
-[battery]
-format = "[$symbol]($style)"
-full_symbol = ""
-charging_symbol = " "
-discharging_symbol = "⚡"
-##                ##
-[[battery.display]]
-threshold = 10
-style = "bold red"
-##                ##
-[[battery.display]]
-threshold = 25
-style = "bold orange"
-##                ##
-[[battery.display]]
-threshold = 50
-style ="bold yellow"
-##                ##
-[[battery.display]]
-threshold = 100
-style ="bold green"
-
-
-
-[git_branch]
-format = "[$symbol$branch]($style) • "
-symbol = " "
-style = "bold yellow"
-
-[git_commit]
-commit_hash_length = 8
-style = "bold white"
-
-[git_status]
-format = "$ahead_behind$modified$untracked$staged"
-ahead = " ↑"
-behind = " ↓" 
-untracked = " ✗${count}"
-modified = " ፧"
-staged = " 🗸${count}"
-style = "bright-white"
-
-
 [time]
 disabled = false
-format = '[$time]($style)'
+format = '$time'
 time_format = "%T"
-utc_time_offset = "1"
+utc_time_offset = "2"
 
 [package]
 disabled = true
@@ -91,5 +32,3 @@ disabled = true
 [cmd_duration]
 disable = true
 
-[fill]
-symbol = " "
